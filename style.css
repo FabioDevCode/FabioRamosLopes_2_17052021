@@ -1,3 +1,56 @@
-h1 {
-    color:aqua;
+/* ---RESET--- */
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+}
+
+/* --- HEADER --- */
+
+header {
+    width: 1440px;
+    height: 110px;
+    background-color: cadetblue;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo img {
+    height: 60px;
+    margin-left: 70px;
+    background-color: chartreuse;
+    
+}
+
+nav {
+    display: flex;
+    background-color: crimson;
+    text-align: center;
+    text-justify: center
+}
+
+.navigation {
+    padding-top: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: 3px solid red;
+    height: 110px;
+    margin-right: 70px;
+    background-color: cornflowerblue;
+}
+
+    
