@@ -5,6 +5,14 @@
     padding: 0;
 }
 
+/* Code couleur :
+
+Bleu: #0065FC
+Claire: #DEEBFF
+Gris: #F2F2F2
+
+*/
+
 a {
     text-decoration: none;
     color: black;
@@ -15,30 +23,29 @@ a {
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
+    background-color:whitesmoke;
 }
 
 /* --- HEADER --- */
 
 header {
     width: 1440px;
-    height: 110px;
-    background-color: cadetblue;
+    height: 90px;
+    padding-top: 20px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
 }
 
 #logo img {
-    height: 60px;
+    height: 50px;
     margin-left: 70px;
-    background-color: chartreuse;
-    
 }
 
 nav {
     display: flex;
-    background-color: crimson;
     text-align: center;
     text-justify: center
 }
@@ -47,10 +54,161 @@ nav {
     padding-top: 45px;
     padding-left: 20px;
     padding-right: 20px;
-    border-top: 3px solid red;
+    border-top: 3px solid #0065FC;
     height: 110px;
     margin-right: 70px;
-    background-color: cornflowerblue;
+    background-color: white;
 }
 
-    
+/* -- MAIN -- */
+
+main {
+    width: 1440px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+/* -- Section de recharche -- */
+
+#recherche {
+    width: auto;
+    height: 250px;
+    margin: 0px 70px;
+    background-color: white;
+}
+
+#titre {
+    width: 100%;
+    height: 65px;
+    background-color: white;
+    padding: 20px 0px 0px 0px;
+}
+
+h1 {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.soustitre {
+    font-size: 0.9em;
+}
+
+#modulerecherche {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    border: 1px solid #F2F2F2;
+    width: 400px;
+    height: 45px;
+    border-radius: 15px;
+    margin-top: 15px;
+    padding: none;
+}
+
+.iconmap {
+    height: 45px;
+    width: 45px;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+
+input {
+    height: 45px;
+    width: 235px;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    font-size: 1.2em;
+    padding-left: 10px;
+}
+
+button {
+    height: 45px;
+    width: 120px;
+    background-color: #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid transparent;
+    font-size: 0.95em;
+    font-weight: bolder;
+    color: white;
+}
+
+/* -- Les filtres --*/
+
+#lesfiltres {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.filtre {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    height: 40px;
+    background-color: white;
+    border-top: 2px solid #F2F2F2;
+    border-right: 2px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
+    border-radius: 20px;
+}
+
+.iconfiltre {
+    height: 40px;
+    width: 40px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #DEEBFF;
+    border-radius: 50%;
+}
+
+.textefiltre {
+    margin: 0px 15px;
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
+h3 {
+    font-size: 0.97em;
+}
+/* -- Teste info -- */
+
+#info {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: white;
+}
+
+.iconi {
+    font-size: 0.75em;
+    height: 20px;
+    width: 20px;
+    color: #0065FC;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid #F2F2F2;
+    border-radius: 50%;
+}
+
+#info .soustitre {
+    margin-left: 10px;
+}
