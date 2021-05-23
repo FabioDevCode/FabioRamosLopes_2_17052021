@@ -18,11 +18,12 @@ a {
     color: black;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
-
 body {
     font-family: 'Raleway', sans-serif;
-    font-size: 1em;
+    color: black;
+    font-weight: 400;
+    height: auto;
+    font-size: 0.95em;
     background-color:whitesmoke;
 }
 
@@ -40,24 +41,30 @@ header {
 }
 
 #logo img {
-    height: 50px;
-    margin-left: 70px;
+    height: 40px;
+    margin-left: 55px;
 }
 
 nav {
     display: flex;
-    text-align: center;
-    text-justify: center
+
 }
 
 .navigation {
     padding-top: 45px;
     padding-left: 20px;
     padding-right: 20px;
-    border-top: 3px solid #0065FC;
+    border-top: 2px solid transparent;
     height: 110px;
-    margin-right: 70px;
-    background-color: white;
+    margin-right: 55px;
+    text-align: center;
+    text-justify: center
+}
+
+.inscrire {
+    cursor: pointer;
+    color: #0065FC;
+    font-weight: 800;
 }
 
 /* -- MAIN -- */
@@ -72,25 +79,25 @@ main {
 
 #recherche {
     width: auto;
-    height: 250px;
-    margin: 0px 70px;
-    background-color: white;
+    height: 280px;
+    margin: 0px 55px;
 }
 
 #titre {
     width: 100%;
-    height: 65px;
-    background-color: white;
+    height: 60px;
+    font-weight: 600;
     padding: 20px 0px 0px 0px;
 }
 
 h1 {
     margin-bottom: 5px;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .soustitre {
     font-size: 0.9em;
+    font-weight: 600;
 }
 
 #modulerecherche {
@@ -125,7 +132,9 @@ input {
     border-bottom: 1px solid #F2F2F2;
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.2em;
+    font-weight: 800;
     padding-left: 10px;
 }
 
@@ -138,8 +147,10 @@ button {
     border-right: 1px solid transparent;
     border-bottom: 1px solid transparent;
     border-left: 1px solid transparent;
-    font-size: 0.95em;
-    font-weight: bolder;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
     color: white;
 }
 
@@ -149,8 +160,7 @@ button {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 40px;
-    background-color: white;
+    height: 50px;
     margin-top: 20px;
 }
 
@@ -158,42 +168,43 @@ button {
     display: flex;
     align-items: center;
     margin-left: 25px;
-    height: 40px;
+    height: 50px;
     background-color: white;
-    border-top: 2px solid #F2F2F2;
-    border-right: 2px solid #F2F2F2;
-    border-bottom: 2px solid #F2F2F2;
-    border-radius: 20px;
+    border-top: 2.5px solid #F2F2F2;
+    border-right: 2.5px solid #F2F2F2;
+    border-bottom: 2.5px solid #F2F2F2;
+    border-radius: 25px;
+    cursor: pointer;
 }
 
 .iconfiltre {
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     color: #0065FC;
     background-color: #DEEBFF;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #DEEBFF;
+    border: 2.5px solid #DEEBFF;
     border-radius: 50%;
 }
 
 .textefiltre {
     margin: 0px 15px;
-    font-weight: bold;
-    font-size: 0.95em;
+    font-weight: 800;
+    font-size: 1.15em;
 }
 
 h3 {
-    font-size: 0.97em;
+    font-size: 1.1em;
 }
 /* -- Teste info -- */
 
 #info {
     display: flex;
     align-items: center;
-    height: 60px;
-    background-color: white;
+    height: 65px;
+    margin: 10px 0;
 }
 
 .iconi {
@@ -211,4 +222,177 @@ h3 {
 
 #info .soustitre {
     margin-left: 10px;
+}
+
+/* -- Hebergment / Section & Aside--*/
+
+#hébergements {
+    margin: 0px 55px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+#hébergements section {
+    height: 625px;
+    width: 865px;
+}
+
+#hébergements aside {
+    height: 625px;
+    width: 420px;
+}
+
+.blockgrey {
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    padding: 40px;
+}
+
+.blockgrey h3 {
+    text-justify: center;
+    display: block;
+    height: 20px;
+    margin-top: 40px;
+    cursor: pointer;
+    width: 15%;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.titrepopulaires {
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconcourbe {
+    font-size: 1.45em;
+}
+
+/* -- Cartes herbergements -- */
+
+.fa-star {
+    font-size: 0.8em;
+    letter-spacing: -3px;
+}
+
+.starblue {
+    color: #0065FC;
+}
+
+.stargrey {
+    color: #F2F2F2;
+}
+
+.bloccartes1 {
+    width: auto;
+    height: 425px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cartetype1 {
+    height: 200px;
+    width: 240px;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.cartetype1 img {
+    display: block;
+    object-fit: cover;
+    height: 110px;
+    border-radius: 10px 10px 0 0;
+}
+
+.cartetype1 div {
+    background-color: white;
+    height: 200px;
+    border-radius: 0 0 10px 10px;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.cartetype1 div p {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.cartetype1 span {
+    font-weight: 600;
+}
+
+/* - cartes aside - */
+
+.bloccartes2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 491px;
+}
+
+.cartetype2 {
+    width: 345px;
+    height: 145px;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.bloccartes2 img {
+    display: block;
+    object-fit: cover;
+    height: 135px;
+    width: 130px;
+    border-radius: 10px 0 0 10px;
+}
+
+.cartetype2 div {
+    padding: 0 30px;
+}
+
+.cartetype2 .fa-star {
+    margin-top: 45px;
+}
+
+/* -- Effets -- */
+
+a:hover {
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+
+.filtre:hover {
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-top: 2.5px solid #0065FC;
+    border-right: 2.5px solid #0065FC;
+    border-bottom: 2.5px solid #0065FC;
+    transition: all 450ms;
+}
+
+.filtre:hover .iconfiltre{
+    color: white;
+    background-color: #0065FC;
+    border: 2.5px solid #0065FC;
+    transition: all 600ms;
 }
