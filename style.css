@@ -22,6 +22,7 @@ body {
 /* ---- HEADER ---- */
 
 header {
+    position: relative;
     width: 1440px;
     height: 90px;
     padding-top: 20px;
@@ -32,14 +33,22 @@ header {
     background-color: white;
 }
 
+#logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1440px;
+}
+
 #logo img {
-    height: 40px;
+    height: 42px;
     margin-left: 55px;
 }
 
 nav {
+    position: absolute;
+    right: 165px;
     display: flex;
-
 }
 
 .navigation {
@@ -50,13 +59,13 @@ nav {
     height: 110px;
     margin-right: 55px;
     text-align: center;
-    text-justify: center
 }
 
 .inscrire {
     cursor: pointer;
     color: #0065FC;
     font-weight: 800;
+    width: 110px;
 }
 
 /* ---- MAIN ---- */
@@ -101,7 +110,6 @@ h1 {
     height: 45px;
     border-radius: 15px;
     margin-top: 15px;
-    padding: none;
 }
 
 .iconmap {
@@ -161,7 +169,6 @@ button {
     align-items: center;
     margin-left: 25px;
     height: 50px;
-    background-color: white;
     border-top: 2.5px solid #F2F2F2;
     border-right: 2.5px solid #F2F2F2;
     border-bottom: 2.5px solid #F2F2F2;
@@ -246,12 +253,13 @@ h2 {
 }
 
 .blockgrey h3 {
-    text-justify: center;
     display: block;
     height: 20px;
     margin-top: 40px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid transparent;
     cursor: pointer;
-    width: 15%;
+    width: 12.9%;
 }
 
 h4 {
@@ -311,7 +319,7 @@ h4 {
     border-radius: 10px 10px 0 0;
 }
 
-.cartetype1 div {
+.zonetexte1 {
     background-color: white;
     height: 200px;
     border-radius: 0 0 10px 10px;
@@ -319,7 +327,7 @@ h4 {
     padding-top: 5px;
 }
 
-.cartetype1 div p {
+.zonetexte1 p {
     font-size: 0.9em;
     margin-bottom: 5px;
 }
@@ -358,7 +366,7 @@ h4 {
     border-radius: 10px 0 0 10px;
 }
 
-.cartetype2 div {
+.zontexte2 {
     padding: 0 30px;
 }
 
@@ -404,6 +412,7 @@ h4 {
 
 .colonne {
     height: 446px;
+    cursor: pointer;
 }
 
 .colonne img{
@@ -421,6 +430,7 @@ h4 {
 
 .carrétype1 {
     height: 235px;
+    cursor: pointer;
 }
 
 .carrétype1 img{
@@ -431,6 +441,7 @@ h4 {
 
 .carrétype2 {
     height: 165px;
+    cursor: pointer;
 }
 
 .carrétype2 img{
@@ -480,6 +491,7 @@ h4 {
 a:hover {
     border-top: 2px solid #0065FC;
     color: #0065FC;
+    transition: all 350ms;
 }
 
 .filtre:hover {
@@ -491,11 +503,11 @@ a:hover {
     transition: all 450ms;
 }
 
-.filtre:hover .iconfiltre{
+.filtre:hover .iconfiltre {
     color: white;
     background-color: #0065FC;
-    border: 2.5px solid #0065FC;
-    transition: all 600ms;
+    border: 2.5px solid transparent;
+    transition: all 300ms;
 }
 
 .cartetype1:hover {
@@ -506,6 +518,11 @@ a:hover {
 .cartetype2:hover {
     transition: transform 0.2s;
     transform: scale(1.05);
+}
+
+.blockgrey h3:hover {
+    border-bottom: 2px solid black;
+    transition: all 400ms;
 }
 
 .colonne:hover {
@@ -521,4 +538,24 @@ a:hover {
 .carrétype2:hover {
     transition: transform 0.2s;
     transform: scale(1.05);
+}
+
+/* ---- REPONSIVE MOBILE ---- */
+
+@media screen and (max-width: 425px){
+
+   
+
+
+
+}
+
+/* ---- RESPONSIVE TABLETTE ---- */
+
+@media screen and (max-width: 768px){
+
+ 
+
+
+
 }
