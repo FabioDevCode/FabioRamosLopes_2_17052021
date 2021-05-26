@@ -75,6 +75,7 @@ body {
     /* ---- MAIN ---- */
 
     main {
+        height: 1515px;
         max-width: 1440px;
         margin: 0 auto;
         background-color: white;
@@ -111,6 +112,7 @@ h1 {
 }
 
 #modulerecherche {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;    
@@ -122,6 +124,8 @@ h1 {
 }
 
 .iconmap {
+    position: absolute;
+    left: 0;
     height: 45px;
     width: 45px;
     border-radius: 15px 0px 0px 15px;
@@ -135,6 +139,9 @@ h1 {
 }
 
 input {
+    display: block;
+    margin-left: 45px;
+    margin-right: 120px;
     height: 45px;
     width: 235px;
     border-top: 1px solid #F2F2F2;
@@ -147,7 +154,12 @@ input {
     padding-left: 10px;
 }
 
-button {
+.button {
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 45px;
     width: 120px;
     background-color: #0065FC;
@@ -179,6 +191,7 @@ button {
 
 .boutonsfiltre {
     display: flex;
+    align-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -241,7 +254,9 @@ h3 {
 }
 
 #info .soustitre {
+    margin-top: 0;
     margin-left: 10px;
+    display: block;
 }
 
 /* -- Hebergment / Section & Aside--*/
@@ -260,6 +275,13 @@ h2 {
 #hébergements section {
     height: 625px;
     width: 65%;
+}
+
+.lignecarte {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }
 
 #hébergements aside {
@@ -313,7 +335,7 @@ h4 {
 }
 
 .bloccartes1 {
-    width: auto;
+    width: 100%;
     height: 425px;
     display: flex;
     justify-content: space-between;
@@ -365,10 +387,12 @@ h4 {
     justify-content: space-between;
     align-content: space-between;
     height: 491px;
+    width: 100%;
 }
 
 .cartetype2 {
-    width: 340px;
+    position: relative;
+    width: 100%;
     height: 145px;
     border-radius: 15px;
     background-color: white;
@@ -383,16 +407,17 @@ h4 {
     display: block;
     object-fit: cover;
     object-position: center;
-    width: 120px;
+    width: 36%;
     border-radius: 10px 0 0 10px;
 }
 
 .zontexte2 {
-    padding: 0 30px;
+    padding: 0 7%;
 }
 
-.cartetype2 .fa-star {
-    margin-top: 45px;
+.asideétoiles {
+    position: absolute;
+    bottom: 10px;
 }
 
 /* -- Activités section -- */
@@ -510,73 +535,134 @@ h4 {
 
 /* ---- RESPONSIVE LAPTOP ---- */
 
+@media screen and (max-width: 1440px){
+    
+    .blockgrey {
+        padding: 20px 3.8% 40px 3.8%;
+    }
+
+    #hébergements section {
+        padding: 40px 3.8%;
+    }
+    
+}
+
 @media screen and (min-width: 1240px){
 
     /* -- Effets -- */
-
-a:hover {
-    border-top: 2px solid #0065FC;
-    color: #0065FC;
-    transition: all 350ms;
-}
-
-.filtre:hover {
-    color: #0065FC;
-    background-color: #DEEBFF;
-    border-top: 2.5px solid #0065FC;
-    border-right: 2.5px solid #0065FC;
-    border-bottom: 2.5px solid #0065FC;
-    transition: all 450ms;
-}
-
-.filtre:hover .iconfiltre {
-    color: white;
-    background-color: #0065FC;
-    border: 2.5px solid transparent;
-    transition: all 300ms;
-}
-
-.cartetype1:hover {
-    transition: transform 0.2s;
-    transform: scale(1.05);
-}
-
-.cartetype2:hover {
-    transition: transform 0.2s;
-    transform: scale(1.05);
-}
-
-.blockgrey h3:hover {
-    border-bottom: 2px solid black;
-    transition: all 400ms;
-}
-
-.colonne:hover {
-    transition: transform 0.2s;
-    transform: scale(1.05);
-}
-
-.carrétype1:hover {
-    transition: transform 0.2s;
-    transform: scale(1.05);
-}
-
-.carrétype2:hover {
-    transition: transform 0.2s;
-    transform: scale(1.05);
-}
     
+    a:hover {
+        border-top: 2px solid #0065FC;
+        color: #0065FC;
+        transition: all 350ms;
+    }
+
+    .filtre:hover {
+        color: #0065FC;
+        background-color: #DEEBFF;
+        border-top: 2.5px solid #0065FC;
+        border-right: 2.5px solid #0065FC;
+        border-bottom: 2.5px solid #0065FC;
+        transition: all 450ms;
+    }
+
+    .filtre:hover .iconfiltre {
+        color: white;
+        background-color: #0065FC;
+        border: 2.5px solid transparent;
+        transition: all 300ms;
+    }
+
+    .cartetype1:hover {
+        transition: transform 0.2s;
+        transform: scale(1.05);
+    }
+
+    .cartetype2:hover {
+        transition: transform 0.2s;
+        transform: scale(1.05);
+    }
+
+    .blockgrey h3:hover {
+        border-bottom: 2px solid black;
+        transition: all 400ms;
+    }
+
+    .colonne:hover {
+        transition: transform 0.2s;
+        transform: scale(1.05);
+    }
+
+    .carrétype1:hover {
+        transition: transform 0.2s;
+        transform: scale(1.05);
+    }
+
+    .carrétype2:hover {
+        transition: transform 0.2s;
+        transform: scale(1.05);
+    }
+    
+}
+
+@media screen and (max-width: 1180px) {
+
+    main {
+        height: 1740px;
+    }
+
+    #hébergements {
+        height: 850px;
+    }
+
+    #hébergements section {
+        height: 850px;
+        width: 55%;
+    }
+
+    .bloccartes1 {
+        height: 650px;
+        flex-direction: row;
+    }
+
+    .lignecarte {
+        width: 47.5%;
+        height: 650px;
+        flex-direction: column;
+    }
+
+    .cartetype1 {
+        width: 100%;
+    }
+
+    #hébergements aside {
+        height: 850px;
+        width: 41.6%;
+    }
+
+    .bloccartes2 {
+        height: 715px;
+    }
+
+    .cartetype2 {
+        height: 222px;
+    }
+
+    .bloccartes2 img {
+        width: 45%;
+    }
+
 }
 
 /* ---- RESPONSIVE TABLETTE ---- */
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 990px){
 
     body {
         font-size: 1em;
         word-wrap: break-word;
-        overflow: hidden;
     }
+
     /* - zone de rechercher -*/
 
     #recherche {
@@ -618,17 +704,17 @@ a:hover {
     /*- zone hébergements + populaires -*/
 
     #hébergements {
-        background-color: lightskyblue;
         margin: 0px;
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         align-content: space-between;
-        height: 1800px;
+        height: 1445px;
     }
 
     #hébergements section {
-        height: 1175px;
+        background-color: white;
+        height: 850px;
         width: 100%;
     }
     
@@ -639,6 +725,11 @@ a:hover {
 
     .cartetype2 {
         width: 100%;
+        height: 145px;
+    }
+
+    .bloccartes2 {
+        height: 470px;
     }
 
     .bloccartes2 img {
@@ -647,6 +738,11 @@ a:hover {
         width: 50%;
         border-radius: 10px 0 0 10px;
     }
+
+    .blockgrey {
+        border-radius: 0%;
+    }
+
 }
 
 /* ---- REPONSIVE Intermédiaire ---- */
@@ -710,51 +806,105 @@ a:hover {
         margin-top: 15px;
     }
    
+    #info {
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 616px){
+
+    #recherche {
+        height: 420px;
+    }
+
+    #modulerecherche {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 532px){
+
+    main {
+        height: 2315px;
+    }
+
+    #recherche {
+        height: 480px;
+    }
+
+    #lesfiltres {
+        height: 160px;
+    }
+
+    .boutonsfiltre {
+        min-height: 170px;
+    }
+
+    #info {
+        align-items: flex-start;
+    }
+
+    .bloccartes1 {
+        flex-direction: row;
+        height: 1140px;
+    }
+
+    .lignecarte {
+        width: 100%;
+        height: 564px;
+    }
+
+    section {    
+        height: 1300px;
+    }
 }
 
 /* ---- REPONSIVE MOBILE ---- */
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 430px){
 
     body {
         font-size: 1.1em;
     }
 
- /* - zone de rechercher -*/
-
     #modulerecherche {
-        margin-top: 75px;
-        width: 100%;
+        margin: 75px auto 0 auto;
+        width: 95%;
     }
     
-        input {
-            width: 100%;
-        }
+    input {
+        margin: 0 45px;
+    }
+
+    #recherche {
+        height: 560px;
+    }
+
+    .button {
+        width: 45px;
+        border-radius: 15px;
+    }
+
+    .button p {
+        display: none;
+    }
     
-        #recherche {
-            height: 535px;
-        }
-    
-        button {
-            width: 45px;
-            border-radius: 15px;
-        }
-    
-        button p {
-            display: none;
-        }
-        
-        .loupe {
-            display: block;
-        }
-    
-        .boutonsfiltre {
-            min-height: 220px;
-        }
-    
-        #info {
-            height: 45px;
-            margin-bottom: 0;
-        }
+    .loupe {
+        display: block;
+    }
+
+    .boutonsfiltre {
+        min-height: 220px;
+    }
+
+    #info {
+        height: 55px;
+        padding-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    #lesfiltres {
+        height: 260px;
+    }
 
 }
