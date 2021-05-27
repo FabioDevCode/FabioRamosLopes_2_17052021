@@ -21,66 +21,63 @@ body {
 
     /* ---- HEADER ---- */
 
-@media screen and (min-width: 761px){
-
-    header {
-        position: relative;
-        max-width: 1440px;
-        height: 90px;
-        padding-top: 20px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: white;
-    }
-
-    nav {
-        position: absolute;
-        right: 165px;
-        display: flex;
-    }
-
-    .navigation {
-        padding-top: 45px;
-        padding-left: 20px;
-        padding-right: 20px;
-        border-top: 2px solid transparent;
-        height: 110px;
-        margin-right: 55px;
-        text-align: center;
-    }
-    
-    .inscrire {
-        cursor: pointer;
-        color: #0065FC;
-        font-weight: 800;
-        width: 120px;
-        margin-right: 3.8%;
-    }
-
-    #logo {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 1440px;
-    }
-    
-    #logo img {
-        height: 42px;
-        margin-left: 3.8%;
-        cursor: pointer;
-    }
+header {
+    position: relative;
+    max-width: 1440px;
+    height: 90px;
+    padding-top: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
 }
+
+nav {
+    position: absolute;
+    right: 165px;
+    display: flex;
+}
+
+.navigation {
+    padding: 45px 20px 0px 20px;
+    border-top: 2px solid transparent;
+    height: 110px;
+    margin-right: 55px;
+    text-align: center;
+}
+    
+.inscrire {
+    padding: 45px 20px 0px 20px;
+    height: 110px;
+    text-align: right;
+    cursor: pointer;
+    color: #0065FC;
+    font-weight: 800;
+    width: 120px;
+    margin-right: 3.8%;
+}
+
+#logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1440px;
+}
+    
+#logo img {
+    height: 42px;
+    margin-left: 3.8%;
+    cursor: pointer;
+    }
     /* ---- MAIN ---- */
 
-    main {
-        height: 1515px;
-        max-width: 1440px;
-        margin: 0 auto;
-        background-color: white;
-    }
-
+main {
+    height: 1515px;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: white;
+}
 
 /* -- Section de recharche -- */
 
@@ -302,7 +299,7 @@ h2 {
     padding-bottom: 25px;
     border-bottom: 2px solid transparent;
     cursor: pointer;
-    width: auto;
+    width: 101px;
 }
 
 h4 {
@@ -364,6 +361,7 @@ h4 {
 
 .zonetexte1 {
     background-color: white;
+    overflow: hidden;
     height: 200px;
     border-radius: 0 0 10px 10px;
     padding-left: 15px;
@@ -413,6 +411,8 @@ h4 {
 
 .zontexte2 {
     padding: 0 7%;
+    width: 62%;
+    overflow: hidden;
 }
 
 .asideétoiles {
@@ -425,8 +425,9 @@ h4 {
 #activités {
     height: 600px;
     max-width: 1440px;
-    padding: 50px 55px;
+    padding: 50px 3.8%;
     margin-bottom: 15px;
+    background-color: lightgreen;
 }
 
 #activités img {
@@ -434,19 +435,18 @@ h4 {
 }
 
 .blockactivités {
+    background-color: lightcoral;
     width: 100%;
     height: 446px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
     
 .blockactivité1, .blockactivité2 {
+    background-color: lightskyblue;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     width: 48.27%;
-    min-width: 480px;
 }
 
 .colonne, .carré {
@@ -464,12 +464,6 @@ h4 {
     cursor: pointer;
 }
 
-.colonne img{
-    display: block;
-    object-fit: cover;
-    height: 391px;
-}
-
 .colonne, .carrétype1, .carrétype2 {
     border-radius: 20px;
     display: flex;
@@ -477,12 +471,20 @@ h4 {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
+.cartecolonne img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    height: 391px;
+}
+
 .carrétype1 {
     height: 235px;
     cursor: pointer;
 }
 
-.carrétype1 img{
+.carrétype1 img {
+    width: 100%;
     display: block;
     object-fit: cover;
     height: 180px;
@@ -493,7 +495,8 @@ h4 {
     cursor: pointer;
 }
 
-.carrétype2 img{
+.carrétype2 img {
+    width: 100%;
     display: block;
     object-fit: cover;
     height: 110px;
@@ -512,16 +515,27 @@ h4 {
 
 #pieddepage {
     background-color: #F2F2F2;
-    padding: 40px 55px;
+    padding: 0 3.8%;
     margin: 0 auto;
     max-width: 1440px;
     height: 220px;
     display: flex;
 }
 
+.footersections {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
 #pieddepage section {
-    width: 450px;
-    height: 140px;
+    padding-top: 40px;
+    padding-right: 40px;
+    width: 33.33%;
+    min-width: 260px;
+    height: 170px;
 }
 
 #pieddepage section h3 {
@@ -533,268 +547,221 @@ h4 {
     cursor: pointer;
 }
 
-/* ---- RESPONSIVE LAPTOP ---- */
+/* ---- ANIMATION ---- */
 
-@media screen and (max-width: 1440px){
-    
-    .blockgrey {
-        padding: 20px 3.8% 40px 3.8%;
-    }
+@media only screen and (min-width: 845px){
 
-    #hébergements section {
-        padding: 40px 3.8%;
-    }
-    
-}
-
-@media screen and (min-width: 1240px){
-
-    /* -- Effets -- */
-    
     a:hover {
         border-top: 2px solid #0065FC;
         color: #0065FC;
         transition: all 350ms;
     }
-
-    .filtre:hover {
-        color: #0065FC;
-        background-color: #DEEBFF;
-        border-top: 2.5px solid #0065FC;
-        border-right: 2.5px solid #0065FC;
-        border-bottom: 2.5px solid #0065FC;
-        transition: all 450ms;
-    }
-
-    .filtre:hover .iconfiltre {
-        color: white;
-        background-color: #0065FC;
-        border: 2.5px solid transparent;
-        transition: all 300ms;
-    }
-
-    .cartetype1:hover {
-        transition: transform 0.2s;
-        transform: scale(1.05);
-    }
-
-    .cartetype2:hover {
-        transition: transform 0.2s;
-        transform: scale(1.05);
-    }
-
-    .blockgrey h3:hover {
-        border-bottom: 2px solid black;
-        transition: all 400ms;
-    }
-
-    .colonne:hover {
-        transition: transform 0.2s;
-        transform: scale(1.05);
-    }
-
-    .carrétype1:hover {
-        transition: transform 0.2s;
-        transform: scale(1.05);
-    }
-
-    .carrétype2:hover {
-        transition: transform 0.2s;
-        transform: scale(1.05);
-    }
     
 }
+
+.inscrire:hover {
+    transition: transform 200ms;
+    transform: scale(1.15);
+    text-shadow: #0065FC 0 0 25px;
+}
+
+.filtre:hover {
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-top: 2.5px solid #0065FC;
+    border-right: 2.5px solid #0065FC;
+    border-bottom: 2.5px solid #0065FC;
+    transition: all 450ms;
+}
+
+.filtre:hover .iconfiltre {
+    color: white;
+    background-color: #0065FC;
+    border: 2.5px solid transparent;
+    transition: all 300ms;
+}
+
+.cartetype1:hover {
+    transition: transform 200ms;
+    transform: scale(1.05);
+}
+
+.cartetype2:hover {
+    transition: transform 200ms;
+    transform: scale(1.05);
+}
+
+.blockgrey h3:hover {
+    border-bottom: 2px solid black;
+    transition: all 400ms;
+}
+
+.colonne:hover {
+    transition: transform 0.2s;
+    transform: scale(1.05);
+}
+
+.carrétype1:hover {
+    transition: transform 0.2s;
+    transform: scale(1.05);
+}
+
+.carrétype2:hover {
+    transition: transform 0.2s;
+    transform: scale(1.05);
+}
+
+.footersections p:hover {
+    text-decoration: underline;
+}
+
+/* ----  RRESPONSIVE DESIGN ---- */
 
 @media screen and (max-width: 1180px) {
 
     main {
-        height: 1740px;
+        height: 2630px;
     }
 
     #hébergements {
-        height: 850px;
+        height: 1250px;
+        flex-direction: column-reverse;
+        margin: 0;
     }
 
     #hébergements section {
-        height: 850px;
-        width: 55%;
-    }
-
-    .bloccartes1 {
-        height: 650px;
-        flex-direction: row;
-    }
-
-    .lignecarte {
-        width: 47.5%;
-        height: 650px;
-        flex-direction: column;
-    }
-
-    .cartetype1 {
         width: 100%;
     }
 
+    .lignecarte {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .blockgrey {
+        background-color: #F2F2F2;
+        border-radius: 0;
+        padding: 40px 3.8%;
+    }
+    
+    /* -- Cartes herbergements -- */
+    
+    .bloccartes1 {
+        width: 100%;
+    }
+    
+    /* ASIDE */
+
     #hébergements aside {
-        height: 850px;
-        width: 41.6%;
-    }
-
-    .bloccartes2 {
-        height: 715px;
-    }
-
-    .cartetype2 {
-        height: 222px;
+        width: 100%;
     }
 
     .bloccartes2 img {
         width: 45%;
     }
 
-}
+    /* Block activités */
 
-/* ---- RESPONSIVE TABLETTE ---- */
-
-@media screen and (max-width: 990px){
-
-    body {
-        font-size: 1em;
-        word-wrap: break-word;
+    #activités {
+        height: 1092px;
     }
-
-    /* - zone de rechercher -*/
-
-    #recherche {
-        height: 380px;
-    }
-
-    #modulerecherche {
-        margin-top: 30px;
-    }
-
-    #lesfiltres {
+        
+    .blockactivités {
+        height: 938px;
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
     }
-
-    #lesfiltres h3 {
-        margin-bottom: 15px;
-    }
-
-    .boutonsfiltre {
-        min-height: 110px;
+        
+    .blockactivité1, .blockactivité2 {
         align-content: space-between;
-    }
-    
-    .filtre {
-        display: flex;
-        align-items: center;
-        margin-left: 0px;
-        margin-right: 25px;
-        height: 50px;
-        border-top: 2.5px solid #F2F2F2;
-        border-right: 2.5px solid #F2F2F2;
-        border-bottom: 2.5px solid #F2F2F2;
-        border-radius: 25px;
-        cursor: pointer;
-    }
-
-    /*- zone hébergements + populaires -*/
-
-    #hébergements {
-        margin: 0px;
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        align-content: space-between;
-        height: 1445px;
-    }
-
-    #hébergements section {
-        background-color: white;
-        height: 850px;
         width: 100%;
     }
     
-    #hébergements aside {
-        height: 625px;
-        width: 100%;
+    .colonne, .carré {
+        width: 47.5%;
     }
-
-    .cartetype2 {
-        width: 100%;
+    
+    .carré {
+        align-content: space-between;
+    }
+    
+    .carrétype1 {
+        height: 200px;
+    }
+    
+    .carrétype1 img {
+        height: 145px;
+    }
+    
+    .carrétype2 {
+        height: 200px;
+    }
+    
+    .carrétype2 img {
         height: 145px;
     }
 
-    .bloccartes2 {
-        height: 470px;
-    }
+}
 
-    .bloccartes2 img {
-        display: block;
-        object-fit: cover;
-        width: 50%;
-        border-radius: 10px 0 0 10px;
-    }
+@media screen and (max-width: 990px) {
 
-    .blockgrey {
-        border-radius: 0%;
-    }
+    /* -- filtres et zone de recherche a redimensionner */
 
 }
 
-/* ---- REPONSIVE Intermédiaire ---- */
-
-@media screen and (max-width: 760px){
-    
+@media screen and (max-width: 844px) {
+/* Cangement du header et de la nav */
     header {
-        position: relative;
         height: 120px;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-    }
-
-    #logo {
-        height: 80px;
-        display: flex;
-        justify-content: space-between;
-        align-content: space-between;
-        align-items: center;
-        padding: 0 15px;
-    }
-
-    #logo img {
-        height: 45px;
-        margin: 0;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-        height: 40px;
-    }
-
-    nav a {
-        width: 50%;
+        padding-top: 20px;
         margin: 0 auto;
-        text-align: center;
-        padding-top: 10px;
-        border-top: 0px solid transparent;
+    }
+    
+    nav {
+        width: 100%;
+        right: 0;
+        position: absolute;
+        bottom: 0px;
+        display: flex;
+    }
+        
+    .navigation {
+        padding: 12px 0px 0px 0px;
+        border-top: 0px solid;
         border-bottom: 2px solid transparent;
-
+        margin: 0;
+        width: 100%;
+        height: 45px;
+        text-align: center;
     }
 
     .inscrire {
-        cursor: pointer;
-        color: #0065FC;
-        font-weight: 600;
+        padding: 15px 0px 0px 0px;
+        height: 70px;
+        width: 120px;
+        margin-top: 0;
+        margin-right: 3.8%;
     }
+            
+    #logo {
+        position: absolute;
+        top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    #logo img {
+        margin-top: 5px;
+    }
+
+    #pieddepage {
+        height: 365px;
+    }
+
+    /* animation différente */
 
     a:hover {
         border-bottom: 2px solid #0065FC;
@@ -802,109 +769,82 @@ h4 {
         transition: all 350ms;
     }
 
-    .soustitre {
-        margin-top: 15px;
-    }
-   
-    #info {
-        height: 20px;
-    }
 }
 
-@media screen and (max-width: 616px){
 
-    #recherche {
-        height: 420px;
-    }
-
-    #modulerecherche {
-        margin-top: 60px;
-    }
-}
-
-@media screen and (max-width: 532px){
+@media screen and (max-width: 768px) {
+    /* mettre hébergement + activités en colonne */
 
     main {
-        height: 2315px;
+        height: 2790px;
     }
 
-    #recherche {
-        height: 480px;
+    #activités {
+        height: 1250px;
     }
-
-    #lesfiltres {
-        height: 160px;
+        
+    .blockactivités {
+        height: 1130px;
+        flex-direction: column;
     }
-
-    .boutonsfiltre {
-        min-height: 170px;
+        
+    .blockactivité1, .blockactivité2 {
+        flex-direction: column;
+        height: 554px;
     }
-
-    #info {
-        align-items: flex-start;
-    }
-
-    .bloccartes1 {
-        flex-direction: row;
-        height: 1140px;
-    }
-
-    .lignecarte {
+    
+    .colonne, .carré {
         width: 100%;
-        height: 564px;
+    }
+    
+    .carré {
+        align-content: space-between;
+        height: 362px;
     }
 
-    section {    
-        height: 1300px;
+    .colonne {
+        height: 170px;
     }
+
+    .cartecolonne {
+        height: 170px;
+    }
+
+    .cartecolonne img {
+        height: 120px;
+    }
+    
+    .carrétype1 {
+        height: 170px;
+    }
+    
+    .carrétype1 img {
+        height: 120px;
+    }
+    
+    .carrétype2 {
+        height: 170px;
+    }
+    
+    .carrétype2 img {
+        height: 120px;
+    }s
+
 }
 
-/* ---- REPONSIVE MOBILE ---- */
+@media screen and (max-width: 562px) {
 
-@media screen and (max-width: 430px){
-
-    body {
-        font-size: 1.1em;
+    #pieddepage {
+        height: 510px;
     }
 
-    #modulerecherche {
-        margin: 75px auto 0 auto;
-        width: 95%;
-    }
-    
-    input {
-        margin: 0 45px;
-    }
+}
 
-    #recherche {
-        height: 560px;
-    }
+/* ----  VERSION MOBILE ---- */
 
-    .button {
-        width: 45px;
-        border-radius: 15px;
-    }
+@media screen and (max-width: 473px) {
 
-    .button p {
-        display: none;
-    }
-    
-    .loupe {
-        display: block;
-    }
-
-    .boutonsfiltre {
-        min-height: 220px;
-    }
-
-    #info {
-        height: 55px;
-        padding-top: 10px;
-        margin-bottom: 20px;
-    }
-
-    #lesfiltres {
-        height: 260px;
-    }
+    /* tout devrais etre responsive il ne manquera que
+    la zone de recherche */
 
 }
