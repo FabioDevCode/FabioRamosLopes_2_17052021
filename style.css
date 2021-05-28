@@ -73,10 +73,20 @@ nav {
     /* ---- MAIN ---- */
 
 main {
-    height: 1515px;
+    height: 1540px;
     max-width: 1440px;
     margin: 0 auto;
     background-color: white;
+    position: relative;
+}
+
+h1 {
+    margin-bottom: 5px;
+    font-size: 1.3em;
+}
+
+h3 {
+    font-size: 1.1em;
 }
 
 /* -- Section de recharche -- */
@@ -86,21 +96,21 @@ main {
     width: auto;
     height: 290px;
     margin: 0px 3.8%;
-    background-color: white;
     display: flex;
     flex-direction: column;
 }
 
 #titre {
+    position: relative;
     width: 100%;
-    height: 60px;
+    height: 65px;
     font-weight: 600;
-    padding: 20px 0px 0px 0px;
+    padding: 15px 0px 0px 0px;
 }
 
-h1 {
-    margin-bottom: 5px;
-    font-size: 1.3em;
+#titre .soustitre {
+    position: absolute;
+    bottom: 0;
 }
 
 .soustitre {
@@ -118,6 +128,7 @@ h1 {
     height: 45px;
     border-radius: 15px;
     margin-top: 25px;
+    background-color: white;
 }
 
 .iconmap {
@@ -137,8 +148,7 @@ h1 {
 
 input {
     display: block;
-    margin-left: 45px;
-    margin-right: 120px;
+    margin: 0px 120px 0px 45px;
     height: 45px;
     width: 235px;
     border-top: 1px solid #F2F2F2;
@@ -161,10 +171,7 @@ input {
     width: 120px;
     background-color: #0065FC;
     border-radius: 0px 15px 15px 0px;
-    border-top: 1px solid transparent;
-    border-right: 1px solid transparent;
-    border-bottom: 1px solid transparent;
-    border-left: 1px solid transparent;
+    border: 1px solid transparent;
     font-family: 'Raleway', sans-serif;
     cursor: pointer;
     font-size: 1.1em;
@@ -202,6 +209,7 @@ input {
     border-bottom: 2.5px solid #F2F2F2;
     border-radius: 25px;
     cursor: pointer;
+    background-color: white;
 }
 
 .iconfiltre {
@@ -222,9 +230,6 @@ input {
     font-size: 1.15em;
 }
 
-h3 {
-    font-size: 1.1em;
-}
 /* -- icon info -- */
 
 #info {
@@ -289,7 +294,11 @@ h2 {
 .blockgrey {
     background-color: #F2F2F2;
     border-radius: 15px;
-    padding: 40px 40px;
+    padding: 40px;
+}
+
+.bloccartes1 {
+    height: 545px;
 }
 
 .blockgrey h3 {
@@ -420,14 +429,20 @@ h4 {
     bottom: 10px;
 }
 
+.cartetype2 span {
+    font-weight: 600;
+}
+
 /* -- Activités section -- */
 
 #activités {
+    position: absolute;
+    bottom: 0px;
     height: 600px;
     max-width: 1440px;
     padding: 50px 3.8%;
     margin-bottom: 15px;
-    background-color: lightgreen;
+    background-color: white;
 }
 
 #activités img {
@@ -435,7 +450,6 @@ h4 {
 }
 
 .blockactivités {
-    background-color: lightcoral;
     width: 100%;
     height: 446px;
     display: flex;
@@ -443,7 +457,6 @@ h4 {
 }
     
 .blockactivité1, .blockactivité2 {
-    background-color: lightskyblue;
     display: flex;
     justify-content: space-between;
     width: 48.27%;
@@ -506,7 +519,6 @@ h4 {
     display: flex;
     align-items: center;
     height: 55px;
-    background-color: white;
     border-radius: 0 0 20px 20px;
     padding-left: 20px;
 }
@@ -515,16 +527,17 @@ h4 {
 
 #pieddepage {
     background-color: #F2F2F2;
-    padding: 0 3.8%;
     margin: 0 auto;
-    max-width: 1440px;
+    width: 100%;
     height: 220px;
     display: flex;
 }
 
 .footersections {
+    padding: 0 3.8%;
     width: 100%;
-    height: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -546,6 +559,8 @@ h4 {
     margin-bottom: 12px;
     cursor: pointer;
 }
+
+
 
 /* ---- ANIMATION ---- */
 
@@ -630,6 +645,7 @@ h4 {
     }
 
     #hébergements section {
+        height: 625px;
         width: 100%;
     }
 
@@ -642,18 +658,16 @@ h4 {
     
     .blockgrey {
         background-color: #F2F2F2;
-        border-radius: 0;
+        border-radius: 0px;
         padding: 40px 3.8%;
     }
     
     /* -- Cartes herbergements -- */
-    
+
     .bloccartes1 {
         width: 100%;
     }
     
-    /* ASIDE */
-
     #hébergements aside {
         width: 100%;
     }
@@ -662,10 +676,9 @@ h4 {
         width: 45%;
     }
 
-    /* Block activités */
-
     #activités {
         height: 1092px;
+        width: 100%;
     }
         
     .blockactivités {
@@ -706,11 +719,32 @@ h4 {
 
 @media screen and (max-width: 990px) {
 
-    /* -- filtres et zone de recherche a redimensionner */
+    main {
+        height: 2692px;
+    }
 
+    #recherche {
+        height: 350px;
+    }
+
+    #lesfiltres {
+        height: 120px;
+        align-items: flex-start;
+    }
+
+    #lesfiltres h3 {
+        margin-top: 15px;
+    }
+
+    .boutonsfiltre {
+        height: 120px;
+    }
+    
 }
 
 @media screen and (max-width: 844px) {
+
+
 /* Cangement du header et de la nav */
     header {
         height: 120px;
@@ -771,16 +805,76 @@ h4 {
 
 }
 
-
 @media screen and (max-width: 768px) {
-    /* mettre hébergement + activités en colonne */
 
     main {
-        height: 2790px;
+        height: 3480px;
     }
+
+    #hébergements {
+        position: absolute;
+        top: 440px;
+        height: 1790px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    .blockgrey h3 {
+        margin-top: 30px;
+    }
+
+    #hébergements section {
+        padding: 35px 3.8% 0px 3.8%;
+        height: 1268px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    .bloccartes1 {
+        height: 1130px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lignecarte {
+        flex-direction: column;
+        width: 100%;
+        height: 560px;
+    }
+
+    .lignecarte2 {
+        margin-top: 10px;
+    }
+    
+    /* -- Cartes herbergements -- */
+    
+    .cartetype1 {
+        width: 100%;
+        height: 180px;
+    }
+
+    .cartetype1 img {
+        height: 105px;
+    }
+
+    .zonetexte1 {
+        height: 65px;
+        font-size: 0.85em;
+    }
+
+    .zonetexte1 p {
+        margin-bottom: 2px;
+    }
+        
+    /* activités */
 
     #activités {
         height: 1250px;
+        margin-bottom: 0px;
     }
         
     .blockactivités {
@@ -828,7 +922,88 @@ h4 {
     
     .carrétype2 img {
         height: 120px;
-    }s
+    }
+
+}
+
+@media screen and (max-width: 569px) {
+
+    main {
+        height: 3620px;
+        justify-content: space-between;
+    }
+
+    #recherche {
+        height: 500px;
+    }
+
+    #titre {
+        height: 110px;
+        padding: 30px 0px 0px 0px;
+    }
+
+    #modulerecherche {
+        width: 92.4%;
+        min-width: 296px;
+        margin: 30px auto 0px auto;
+        padding-left: 45px;
+    }
+    
+    input {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 45px;
+        width: 68%;
+    }
+    
+    .button {
+        height: 45px;
+        width: 90px;
+        border-radius: 15px;
+    }
+
+    .button p {
+        display: none;
+    }
+
+    .loupe {
+        display: block;
+    }
+
+    #hébergements {
+        top: 580px;
+    }
+
+    /* filtre */
+
+    #lesfiltres {
+        flex-direction: column;
+        height: 160px;
+    }
+
+    #lesfiltres h3 {
+        margin-bottom: 15px;
+    }
+
+    .boutonsfiltre {
+        height: 105px;
+    }
+
+    .filtre {
+        height: 45px;
+        margin: 0px 12px 0px 0px;
+        justify-content: space-around;
+    }
+
+    .textefiltre {
+        margin: 0px 10px;
+    }
+
+    .iconfiltre {
+        height: 45px;
+        width: 45px;
+    }
 
 }
 
@@ -842,9 +1017,87 @@ h4 {
 
 /* ----  VERSION MOBILE ---- */
 
+@media screen and (max-width: 453px) {
+
+    #lesfiltres {
+        height: 210px;
+    }
+    
+    .boutonsfiltre {
+        height: 160px;
+    }
+
+    .button {
+        width: 45px;
+    }
+
+    input {
+        width: 75%;
+    }
+}
+
 @media screen and (max-width: 473px) {
 
-    /* tout devrais etre responsive il ne manquera que
-    la zone de recherche */
+    #recherche {
+        height: 500px;
+    }
+
+    #titre {
+        height: 110px;
+        padding: 30px 0px 0px 0px;
+    }
+
+    #modulerecherche {
+        min-width: 280px;
+    
+    }
+
+    .textefiltre {
+        margin: 0px 5px;
+    }
+    
+}
+
+@media screen and (max-width: 422px) {
+    
+    #info {
+        align-items: flex-start;
+        height: 35px;
+    }
+
+    #info p {
+        padding-top: 2px;
+    }
+    
+}
+
+@media screen and (max-width: 335px) {
+    main {
+        height: 3630px;
+    }
+
+    #hébergements {
+        top: 590px;
+    }
+
+    #lesfiltres {
+        height: 240px;
+    }
+
+    #lesfiltres h3 {
+        margin: 5px 0px;
+    }
+    
+    .boutonsfiltre {
+        height: 210px;
+    }
+
+    #info {
+        margin-bottom: 0px;
+    }
+    
+    input {
+        width: 185px;
+    }
 
 }
