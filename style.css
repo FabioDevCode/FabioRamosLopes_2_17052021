@@ -220,7 +220,6 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2.5px solid #DEEBFF;
     border-radius: 50%;
 }
 
@@ -308,7 +307,7 @@ h2 {
     padding-bottom: 25px;
     border-bottom: 2px solid transparent;
     cursor: pointer;
-    width: 101px;
+    width: 6.1em;
 }
 
 h4 {
@@ -560,8 +559,6 @@ h4 {
     cursor: pointer;
 }
 
-
-
 /* ---- ANIMATION ---- */
 
 @media only screen and (min-width: 845px){
@@ -592,18 +589,17 @@ h4 {
 .filtre:hover .iconfiltre {
     color: white;
     background-color: #0065FC;
-    border: 2.5px solid transparent;
     transition: all 300ms;
 }
 
 .cartetype1:hover {
     transition: transform 200ms;
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .cartetype2:hover {
     transition: transform 200ms;
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .blockgrey h3:hover {
@@ -613,17 +609,17 @@ h4 {
 
 .colonne:hover {
     transition: transform 0.2s;
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .carrétype1:hover {
     transition: transform 0.2s;
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .carrétype2:hover {
     transition: transform 0.2s;
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .footersections p:hover {
@@ -743,8 +739,6 @@ h4 {
 }
 
 @media screen and (max-width: 844px) {
-
-
 /* Cangement du header et de la nav */
     header {
         height: 120px;
