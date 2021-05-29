@@ -307,7 +307,7 @@ h2 {
     padding-bottom: 25px;
     border-bottom: 2px solid transparent;
     cursor: pointer;
-    width: 6.1em;
+    width: 101px;
 }
 
 h4 {
@@ -568,13 +568,13 @@ h4 {
         color: #0065FC;
         transition: all 350ms;
     }
-    
+
 }
 
 .inscrire:hover {
     transition: transform 200ms;
-    transform: scale(1.15);
-    text-shadow: #0065FC 0 0 25px;
+    transform: scale(1.10);
+    text-shadow: #0065FC 0 0 20px;
 }
 
 .filtre:hover {
@@ -817,6 +817,7 @@ h4 {
 
     .blockgrey h3 {
         margin-top: 30px;
+        width: 100%;
     }
 
     #hébergements section {
