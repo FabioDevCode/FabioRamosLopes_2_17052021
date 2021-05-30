@@ -1000,10 +1000,6 @@ h4 {
         width: 45px;
     }
 
-}
-
-@media screen and (max-width: 562px) {
-
     #pieddepage {
         height: 510px;
     }
