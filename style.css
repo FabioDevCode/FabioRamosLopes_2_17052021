@@ -313,6 +313,7 @@ h2 {
 h4 {
     font-size: 1em;
     margin: 5px 0;
+    white-space: nowrap;
 }
 
 .titrepopulaires {
@@ -633,7 +634,7 @@ h4 {
 
 /* ----  RRESPONSIVE DESIGN ---- */
 
-@media screen and (max-width: 1314px) {
+@media screen and (max-width: 1180px) {
 
     main {
         height: 2630px;
